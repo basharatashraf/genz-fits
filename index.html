@@ -3,105 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0a0a0a">
-<title>GENZ FITS | Wear Your Vibe</title>
-<meta name="description" content="Discover modern streetwear at GENZ FITS. Browse the catalogue and order directly on WhatsApp.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>GENZ FITS — Wear Your Vibe</title>
 <style>
-:root{--black:#090909;--dark:#121212;--panel:#171717;--white:#f7f7f7;--muted:#a1a1aa;--silver:#c8cbd0;--line:#303036;--green:#25d366}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Montserrat,Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-weight:900;letter-spacing:.12em;font-size:1.25rem;background:linear-gradient(120deg,#fff,#9ca3af);color:transparent;background-clip:text}.navlinks{display:flex;gap:22px;text-transform:uppercase;font-size:.72rem;letter-spacing:.1em;font-weight:700}.navlinks a:hover{color:#fff}.wa-small{border:1px solid #4b4b50;border-radius:30px;padding:10px 14px;font-size:.75rem;font-weight:700}
-.hero{position:relative;text-align:center;padding:92px 0 86px;overflow:hidden;background:radial-gradient(ellipse at 50% 10%,#292929 0%,#121212 40%,#090909 78%)}.eyebrow{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--silver);border:1px solid #414146;border-radius:30px;padding:9px 14px;display:inline-block}.hero h1{font-size:clamp(2.8rem,8vw,5.6rem);line-height:.98;letter-spacing:-.055em;margin:25px 0 18px;font-weight:900}.silver-text{background:linear-gradient(120deg,#fff,#9ca3af 55%,#666);color:transparent;background-clip:text}.hero p{color:var(--muted);max-width:590px;line-height:1.8;margin:0 auto 28px;font-size:.95rem}.btn{border:0;border-radius:30px;background:linear-gradient(120deg,#f4f4f5,#a1a1aa);color:#080808;padding:13px 22px;font-weight:800;font-size:.78rem;letter-spacing:.06em;display:inline-flex;justify-content:center;align-items:center;gap:8px}.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}.btn-outline{border:1px solid #555;background:transparent;color:#fff}.section{padding:64px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}.section h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:0;font-weight:900;letter-spacing:-.04em}.sub{color:var(--muted);font-size:.85rem;line-height:1.7;margin:8px 0 0}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.filter{background:#131313;border:1px solid #333;color:#b8b8bd;border-radius:24px;padding:9px 13px;font-size:.72rem;font-weight:700}.filter.active,.filter:hover{background:#eee;color:#111;border-color:#eee}.search{width:100%;max-width:350px;background:#111;border:1px solid #333;border-radius:12px;padding:12px 14px;color:#fff;outline:none}.search:focus{border-color:#aaa}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:var(--dark);border:1px solid #292929;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}.card:hover{border-color:#777;transform:translateY(-3px);box-shadow:0 10px 30px #0008}.product-image{height:290px;background:#222;position:relative;overflow:hidden}.product-image img{height:100%;width:100%;object-fit:cover;display:block;transition:transform .45s}.card:hover .product-image img{transform:scale(1.04)}.price-tag{position:absolute;top:12px;right:12px;background:#080808dc;border:1px solid #555;border-radius:30px;padding:8px 10px;font-size:.78rem;font-weight:800}.card-body{padding:18px;display:flex;flex-direction:column;flex:1}.category{color:#aaa;text-transform:uppercase;letter-spacing:.15em;font-size:.63rem;font-weight:700}.card h3{font-size:1rem;margin:9px 0 7px}.description{color:#aaa;font-size:.77rem;line-height:1.6;margin:0 0 16px}.options{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto}.options label{font-size:.65rem;color:#aaa;display:block;margin-bottom:5px}.options select,.options input{width:100%;padding:9px;background:#0b0b0b;color:#fff;border:1px solid #383838;border-radius:8px;font-size:.75rem}.order{width:100%;margin-top:13px;background:#e5e7eb;color:#111;border:0;border-radius:10px;padding:12px;font-weight:900;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}.order:hover{background:#fff}.empty{color:#aaa;padding:24px 0}.founder{background:linear-gradient(120deg,#151515,#0c0c0c);border-top:1px solid #282828;border-bottom:1px solid #282828}.founder-card{display:flex;align-items:center;gap:34px;padding:30px;border:1px solid #393939;border-radius:22px;background:#0808088c}.portrait{width:190px;height:190px;flex:0 0 190px;border-radius:50%;border:2px solid #777;background:radial-gradient(circle at 30% 20%,#555,#171717 60%);display:flex;align-items:center;justify-content:center;color:#eee;font-size:3rem;font-weight:900;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover}.founder-copy .kicker{color:#aaa;letter-spacing:.18em;font-size:.7rem;text-transform:uppercase;font-weight:800}.founder-copy h2{margin:8px 0 14px}.founder-copy p{color:#bbb;line-height:1.8;font-size:.9rem}.note{font-size:.72rem!important;color:#777!important}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.trust article{border:1px solid #303030;border-radius:15px;padding:20px;background:#111}.trust h3{font-size:.9rem;margin:0 0 8px}.trust p{font-size:.75rem;color:#aaa;line-height:1.7;margin:0}footer{padding:34px 0;border-top:1px solid #282828;color:#aaa;font-size:.75rem}footer .foot{display:flex;justify-content:space-between;gap:18px;align-items:center}.footer-brand{font-weight:900;color:#eee;letter-spacing:.14em;font-size:1rem}.float-wa{position:fixed;bottom:18px;right:18px;z-index:15;background:var(--green);color:#07180d;border-radius:30px;padding:13px 16px;font-size:.78rem;font-weight:900;box-shadow:0 6px 22px #0009}
-.modal{position:fixed;inset:0;z-index:100;background:#000e;backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:20px;animation:fadein .35s ease}.modal.hidden{display:none}.modal-box{text-align:center;width:min(430px,100%);padding:34px 24px;border:1px solid #555;border-radius:22px;background:linear-gradient(145deg,#1a1a1a,#080808);box-shadow:0 20px 80px #000}.modal-mark{width:55px;height:55px;border:1px solid #777;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;font-size:1.2rem}.modal h2{font-size:clamp(1.8rem,7vw,2.5rem);margin:0 0 9px;font-weight:900;letter-spacing:-.04em}.modal p{font-size:.76rem;line-height:1.7;color:#aaa;margin:0 0 20px}.modal .founder-name{font-size:.68rem;letter-spacing:.12em;color:#c6c6c6;text-transform:uppercase;margin-bottom:23px}.modal-close{position:absolute;top:16px;right:19px;background:transparent;color:#ddd;border:0;font-size:1.8rem}
-@keyframes fadein{from{opacity:0}to{opacity:1}}@media(max-width:760px){.nav{height:64px}.navlinks{display:none}.hero{padding:72px 0 65px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:220px}.card-body{padding:13px}.card h3{font-size:.88rem}.description{font-size:.7rem}.section{padding:48px 0}.section-head{display:block}.search{margin-top:16px;max-width:none}.founder-card{flex-direction:column;text-align:center;padding:24px 18px;gap:20px}.portrait{width:155px;height:155px;flex-basis:155px}.trust{grid-template-columns:1fr}.float-wa{bottom:12px;right:12px}}@media(max-width:390px){.products{grid-template-columns:1fr}.product-image{height:300px}.wa-small{font-size:.68rem;padding:9px 11px}}
+:root{--ink:#101114;--paper:#f7f7f5;--blue:#2457d6;--red:#e44747;--muted:#777}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}
+button,a{font:inherit}
+.hidden{display:none!important}
+#welcome{min-height:100svh;background:linear-gradient(135deg,#101114,#222b3e);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px}
+.welcome-inner{max-width:600px}
+.brand{font-size:clamp(2.5rem,10vw,5.8rem);font-weight:900;letter-spacing:-.07em;margin:0}
+.tagline{letter-spacing:.22em;text-transform:uppercase;color:#cbd5e1;font-size:.8rem}
+.founder-highlight{display:inline-block;margin:24px 0 14px;padding:12px 16px;border:1px solid #6e8de7;border-radius:8px;background:#17233c;font-weight:700}
+.boys{font-size:.78rem;font-weight:900;letter-spacing:.12em;color:#fff;background:var(--blue);padding:11px 14px;border-radius:5px;display:inline-block}
+.btn{display:inline-block;border:0;border-radius:6px;padding:14px 20px;background:var(--blue);color:white;font-weight:800;text-decoration:none;cursor:pointer}
+#welcome .btn{display:block;margin:24px auto 0;min-width:190px}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #e5e5e5;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(16px,4vw,48px);gap:12px}
+.logo{font-weight:900;letter-spacing:-.05em;font-size:1.5rem}
+.logo span{color:var(--blue)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:inherit;text-decoration:none;font-size:.9rem;font-weight:700}
+main{max-width:1200px;margin:auto;padding:0 18px 50px}
+.hero{padding:55px 0 30px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:900;font-size:.75rem}
+h1{font-size:clamp(2.5rem,7vw,5.6rem);line-height:.92;letter-spacing:-.07em;margin:14px 0}
+.hero p{line-height:1.6;color:#555;max-width:480px}
+.hero-art{min-height:280px;border-radius:14px;background:linear-gradient(140deg,#dce5ff,#f3f3f3 52%,#f5d9d9);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
+.hero-art strong{font-size:clamp(2rem,6vw,4rem);letter-spacing:-.07em;line-height:.95}
+.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 16px}
+.section-title h2{margin:0;font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.05em}
+.notice{background:#101114;color:white;padding:13px 15px;border-radius:6px;font-size:.78rem;font-weight:900;letter-spacing:.08em;display:inline-block}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.product{background:#fff;border:1px solid #e8e8e8;border-radius:10px;overflow:hidden}
+.product-art{height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#e6eaff,#f5f5f5);padding:18px;text-align:center}
+.product-art span{font-size:1.8rem;font-weight:900;letter-spacing:-.06em}
+.product:nth-child(3n+2) .product-art{background:linear-gradient(145deg,#e8e8e8,#d6d6d6)}
+.product:nth-child(3n) .product-art{background:linear-gradient(145deg,#f7e0e0,#f4f4f4)}
+.product-info{padding:14px}
+.product-info h3{margin:0 0 8px;font-size:1rem}
+.price{font-weight:900;font-size:1.1rem}
+.demo{font-size:.75rem;color:var(--muted);margin:8px 0 12px;line-height:1.4}
+.order{width:100%;background:#111;color:#fff;border:0;border-radius:5px;padding:12px;font-weight:800;cursor:pointer}
+#founder{margin:45px 0 20px;background:#e9edfa;border-radius:12px;padding:26px}
+.founder-name{font-size:1.6rem;font-weight:900}
+footer{background:#101114;color:white;padding:28px 18px;text-align:center}
+footer p{color:#c5c5c5;font-size:.85rem}
+.modal-backdrop{position:fixed;inset:0;background:#0009;z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:#fff;border-radius:12px;padding:24px;width:min(100%,360px);text-align:center}
+.modal h3{margin-top:0}
+.modal .btn{width:100%;margin:7px 0}
+.secondary{background:#eceef4;color:#111}
+.close{background:none;border:0;padding:10px;cursor:pointer}
+@media(max-width:700px){
+.hero{grid-template-columns:1fr;padding-top:35px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.product-art{height:165px}
+.section-title{align-items:start;flex-direction:column}
+nav{gap:10px}
+nav a{font-size:.8rem}
+}
+@media(max-width:430px){
+.grid{grid-template-columns:1fr 1fr}
+.product-art{height:135px}
+.product-art span{font-size:1.35rem}
+.product-info{padding:11px}
+.product-info h3{font-size:.9rem}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="logo" href="#home">GENZ FITS</a>
-<nav class="navlinks"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#founder">Founder</a><a href="#contact">Contact</a></nav>
-<a class="wa-small" id="navWhatsApp" href="https://wa.me/919103482274" target="_blank" rel="noopener">WhatsApp Us ↗</a>
-</div></header>
-<main>
-<section class="hero" id="home"><div class="wrap">
-<span class="eyebrow">Modern Streetwear · Wear Your Vibe</span>
-<h1 class="silver-text">UPGRADE<br>YOUR DRIP</h1>
-<p>Discover your everyday streetwear essentials. Explore the catalogue, choose your size and colour, and send your order directly to GENZ FITS on WhatsApp.</p>
-<a class="btn" href="#shop">EXPLORE THE CATALOGUE ↓</a>
-</div></section>
-<section class="section wrap" id="shop">
-<div class="section-head"><div><h2 class="silver-text">THE CATALOGUE</h2><p class="sub">Choose your fit and order directly via WhatsApp.</p></div><input id="search" class="search" type="search" placeholder="Search hoodies, tees..." aria-label="Search products"></div>
-<div class="filters" id="filters">
-<button class="filter active" data-category="all">All Products</button><button class="filter" data-category="hoodies">Hoodies</button><button class="filter" data-category="oversized">Oversized Tees</button><button class="filter" data-category="jackets">Jackets</button>
-</div>
-<div class="products" id="products"></div><p class="sub" style="margin-top:18px">Product photos and prices are demo content. Replace them with your real products before taking customer orders.</p>
+<section id="welcome">
+ <div class="welcome-inner">
+  <p class="tagline">Wear Your Vibe.</p>
+  <h1 class="brand">GENZ FITS</h1>
+  <div class="founder-highlight">Founded by Basharat Ashraf</div><br>
+  <span class="boys">ONLY FOR BOYS · NOT FOR GIRLS</span>
+  <button class="btn" onclick="enterSite()">ENTER WEBSITE&nbsp; →</button>
+ </div>
 </section>
-<section class="section founder" id="founder"><div class="wrap"><div class="founder-card">
-<div class="portrait" aria-label="Founder photo placeholder"><span>BA</span></div>
-<div class="founder-copy"><span class="kicker">Meet the Founder</span><h2 class="silver-text">BASHARAT ASHRAF</h2><p>Behind GENZ FITS is a vision to bring modern streetwear, confident style and unique fashion to your wardrobe.</p><p class="note">Founder photo placeholder — replace this with your real photograph before publishing.</p></div>
-</div></div></section>
-<section class="section wrap"><div class="section-head"><div><h2 class="silver-text">SHOP WITH CONFIDENCE</h2><p class="sub">Simple, direct communication before you order.</p></div></div><div class="trust">
-<article><h3>Direct WhatsApp Orders</h3><p>Send your selected product details directly to the store to confirm availability.</p></article>
-<article><h3>Clear Product Details</h3><p>Check the displayed price, size and colour before sending an enquiry.</p></article>
-<article><h3>Need Help?</h3><p>Message GENZ FITS to ask questions about sizing, delivery or your order.</p></article>
-</div></section>
+<div id="site" class="hidden">
+<header><a class="logo" href="#" onclick="window.scrollTo(0,0);return false" style="color:inherit;text-decoration:none">GENZ <span>FITS</span></a><nav><a href="#shop">Shop</a><a href="#founder">Founder</a><a href="#contact">Contact</a></nav></header>
+<main>
+ <section class="hero">
+  <div><div class="eyebrow">Streetwear · Boys only</div><h1>Wear your<br><span style="color:var(--blue)">own vibe.</span></h1><p>Everyday streetwear with a clean, confident look. Find your next fit at GENZ FITS.</p><span class="notice">ONLY FOR BOYS · NOT FOR GIRLS</span></div>
+  <div class="hero-art"><strong>YOUR<br>FIT.<br>YOUR<br>RULES.</strong></div>
+ </section> <section id="shop">
+  <div class="section-title"><h2>Shop the collection</h2><span class="eyebrow">GENZ FITS</span></div>
+  <p class="demo">Preview collection only. Product artwork and prices below are examples—replace them with your actual stock and prices before taking orders.</p>
+  <div class="grid" id="products"></div>
+ </section>
+ <section id="founder"><div class="eyebrow">Meet the Founder</div><div class="founder-name">Basharat Ashraf</div></section>
 </main>
-<footer id="contact"><div class="wrap foot"><div><div class="footer-brand">GENZ FITS</div><p>Wear Your Vibe. · Founded by Basharat Ashraf</p><p>© <span id="year"></span> GENZ FITS</p></div><a id="footerWhatsApp" href="https://wa.me/919103482274" target="_blank" rel="noopener">Contact us on WhatsApp ↗</a></div></footer>
-<a class="float-wa" id="floatingWhatsApp" href="https://wa.me/919103482274" target="_blank" rel="noopener">WhatsApp GENZ FITS ↗</a>
-<div class="modal" id="welcomeModal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
-<div class="modal-box"><div class="modal-mark">GF</div><h2 id="welcomeTitle" class="silver-text">WELCOME TO<br>GENZ FITS</h2><div class="founder-name">FOUNDED BY BASHARAT ASHRAF</div><p>Wear Your Vibe. Discover your next streetwear favourite.</p><button class="btn" id="startShopping">ENTER THE STORE</button></div>
+<footer id="contact"><div class="logo">GENZ <span style="color:#7896ff">FITS</span></div><p>Wear Your Vibe. · ONLY FOR BOYS · NOT FOR GIRLS</p><p>Orders and questions via WhatsApp</p></footer>
+</div>
+<div id="waModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal"><h3 id="modalTitle">Choose WhatsApp</h3><p id="modalProduct">How would you like to continue?</p>
+  <a id="normalWa" class="btn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+  <a id="businessWa" class="btn secondary" href="#" target="_blank" rel="noopener">WhatsApp Business</a>
+  <button class="close" onclick="closeModal()">Cancel</button>
+  <p class="demo">Your phone may open its default WhatsApp app. If the wrong app opens, set your preferred app in Android settings.</p>
+ </div>
 </div>
 <script>
-/* IMPORTANT: Replace demo products, prices and images with your real inventory before publishing. */
-const WHATSAPP_NUMBER = "919103482274";
-const PRODUCTS = [
-{id:1,title:"Cyber Silver Hoodie",category:"hoodies",price:2499,image:"https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",description:"A clean streetwear hoodie concept."},
-{id:2,title:"Monochrome Oversized Tee",category:"oversized",price:1299,image:"https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",description:"Relaxed-fit tee concept for everyday style."},
-{id:3,title:"Dark Denim Jacket",category:"jackets",price:3999,image:"https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80",description:"A versatile denim jacket concept."},
-{id:4,title:"Phantom Black Graphic Tee",category:"oversized",price:1399,image:"https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",description:"Minimal streetwear-inspired tee concept."},
-{id:5,title:"Stealth Zip Hoodie",category:"hoodies",price:2799,image:"https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80",description:"Layer-ready hoodie concept."},
-{id:6,title:"Silver Accent Windbreaker",category:"jackets",price:3299,image:"https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",description:"A lightweight outerwear concept."}
+const phone = "919103482274";
+const products = [
+ {name:"Essential Hoodie",price:"₹999",art:"ESSENTIAL<br>HOODIE"},
+ {name:"Oversized Sweatshirt",price:"₹799",art:"OVERSIZED<br>SWEATSHIRT"},
+ {name:"Baggy Cargo Pants",price:"₹899",art:"BAGGY<br>CARGO"},
+ {name:"Puffer Jacket",price:"₹1,799",art:"PUFFER<br>JACKET"},
+ {name:"Zip-up Jacket",price:"₹1,199",art:"ZIP-UP<br>JACKET"},
+ {name:"Relaxed Fit Trousers",price:"₹699",art:"RELAXED<br>TROUSERS"}
 ];
-let activeCategory = "all";
-const formatPrice = n => "₹" + Number(n).toLocaleString("en-IN");
-function renderProducts(){
- const search = document.getElementById("search").value.trim().toLowerCase();
- const items = PRODUCTS.filter(p => (activeCategory==="all" || p.category===activeCategory) && (p.title+" "+p.description+" "+p.category).toLowerCase().includes(search));
- const grid = document.getElementById("products");
- grid.innerHTML = "";
- if(!items.length){grid.innerHTML='<p class="empty">No products found. Try another search.</p>';return;}
- items.forEach(p=>{
-  const card=document.createElement("article");card.className="card";
-  card.innerHTML=`<div class="product-image"><img loading="lazy" src="${p.image}" alt="${p.title}"><span class="price-tag">${formatPrice(p.price)}</span></div>
-  <div class="card-body"><span class="category">${p.category==="oversized"?"Oversized Tees":p.category}</span><h3>${p.title}</h3><p class="description">${p.description}</p>
-  <div class="options"><div><label for="size-${p.id}">Size</label><select id="size-${p.id}"><option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select></div>
-  <div><label for="color-${p.id}">Colour</label><select id="color-${p.id}"><option>Black</option><option>White</option><option>Grey</option><option>As shown</option></select></div></div>
-  <button class="order" data-order="${p.id}">Order on WhatsApp</button></div>`;
-  grid.appendChild(card);
- });
- grid.querySelectorAll("[data-order]").forEach(btn=>btn.addEventListener("click",()=>{
-  const p=PRODUCTS.find(x=>x.id===Number(btn.dataset.order));
-  const size=document.getElementById("size-"+p.id).value;
-  const color=document.getElementById("color-"+p.id).value;
-  const message=`Hi GENZ FITS! I'd like to enquire/order:\nProduct: ${p.title}\nPrice shown: ${formatPrice(p.price)}\nSize: ${size}\nColour: ${color}\nPlease confirm availability, final price and delivery charges.`;
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank","noopener");
- }));
+const grid = document.getElementById("products");
+products.forEach(p=>{
+ const card=document.createElement("article");card.className="product";
+ card.innerHTML=`<div class="product-art"><span>${p.art}</span></div><div class="product-info"><h3>${p.name}</h3><div class="price">${p.price}</div><p class="demo">Sample listing · confirm price and availability</p><button class="order">Order on WhatsApp</button></div>`;
+ card.querySelector("button").addEventListener("click",()=>openModal(p));
+ grid.appendChild(card);
+});function enterSite(){document.getElementById("welcome").classList.add("hidden");document.getElementById("site").classList.remove("hidden");window.scrollTo(0,0)}
+function openModal(p){
+ const message=encodeURIComponent(`Hi GENZ FITS! I want to order: ${p.name} — ${p.price}. Please confirm sizes, availability and delivery charges.`);
+ const url=`https://wa.me/${phone}?text=${message}`;
+ document.getElementById("modalProduct").textContent=`${p.name} · ${p.price}`;
+ document.getElementById("normalWa").href=url;
+ document.getElementById("businessWa").href=`whatsapp-business://send?phone=${phone}&text=${message}`;
+ document.getElementById("waModal").classList.remove("hidden");
 }
-document.getElementById("search").addEventListener("input",renderProducts);
-document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
- activeCategory=btn.dataset.category;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===btn));renderProducts();
-}));
-const modal=document.getElementById("welcomeModal");
-function closeWelcome(){modal.classList.add("hidden");}
-document.getElementById("startShopping").addEventListener("click",closeWelcome);
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeWelcome();});
-window.addEventListener("load",()=>{renderProducts();document.getElementById("year").textContent=new Date().getFullYear();setTimeout(closeWelcome,1800);});
-document.getElementById("navWhatsApp").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi GENZ FITS, I have a question.")}`;
-document.getElementById("footerWhatsApp").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi GENZ FITS, I have a question.")}`;
-document.getElementById("floatingWhatsApp").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi GENZ FITS, I would like to enquire about your products.")}`;
+function closeModal(){document.getElementById("waModal").classList.add("hidden")}
+document.getElementById("waModal").addEventListener("click",e=>{if(e.target.id==="waModal")closeModal()});
 </script>
 </body>
 </html>
