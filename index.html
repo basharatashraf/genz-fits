@@ -1,137 +1,181 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GENZ FITS — Wear Your Vibe</title>
-<style>
-:root{--ink:#101114;--paper:#f7f7f5;--blue:#2457d6;--red:#e44747;--muted:#777}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}
-button,a{font:inherit}
-.hidden{display:none!important}
-#welcome{min-height:100svh;background:linear-gradient(135deg,#101114,#222b3e);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px}
-.welcome-inner{max-width:600px}
-.brand{font-size:clamp(2.5rem,10vw,5.8rem);font-weight:900;letter-spacing:-.07em;margin:0}
-.tagline{letter-spacing:.22em;text-transform:uppercase;color:#cbd5e1;font-size:.8rem}
-.founder-highlight{display:inline-block;margin:24px 0 14px;padding:12px 16px;border:1px solid #6e8de7;border-radius:8px;background:#17233c;font-weight:700}
-.boys{font-size:.78rem;font-weight:900;letter-spacing:.12em;color:#fff;background:var(--blue);padding:11px 14px;border-radius:5px;display:inline-block}
-.btn{display:inline-block;border:0;border-radius:6px;padding:14px 20px;background:var(--blue);color:white;font-weight:800;text-decoration:none;cursor:pointer}
-#welcome .btn{display:block;margin:24px auto 0;min-width:190px}
-header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #e5e5e5;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(16px,4vw,48px);gap:12px}
-.logo{font-weight:900;letter-spacing:-.05em;font-size:1.5rem}
-.logo span{color:var(--blue)}
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{color:inherit;text-decoration:none;font-size:.9rem;font-weight:700}
-main{max-width:1200px;margin:auto;padding:0 18px 50px}
-.hero{padding:55px 0 30px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
-.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:900;font-size:.75rem}
-h1{font-size:clamp(2.5rem,7vw,5.6rem);line-height:.92;letter-spacing:-.07em;margin:14px 0}
-.hero p{line-height:1.6;color:#555;max-width:480px}
-.hero-art{min-height:280px;border-radius:14px;background:linear-gradient(140deg,#dce5ff,#f3f3f3 52%,#f5d9d9);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
-.hero-art strong{font-size:clamp(2rem,6vw,4rem);letter-spacing:-.07em;line-height:.95}
-.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 16px}
-.section-title h2{margin:0;font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.05em}
-.notice{background:#101114;color:white;padding:13px 15px;border-radius:6px;font-size:.78rem;font-weight:900;letter-spacing:.08em;display:inline-block}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.product{background:#fff;border:1px solid #e8e8e8;border-radius:10px;overflow:hidden}
-.product-art{height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#e6eaff,#f5f5f5);padding:18px;text-align:center}
-.product-art span{font-size:1.8rem;font-weight:900;letter-spacing:-.06em}
-.product:nth-child(3n+2) .product-art{background:linear-gradient(145deg,#e8e8e8,#d6d6d6)}
-.product:nth-child(3n) .product-art{background:linear-gradient(145deg,#f7e0e0,#f4f4f4)}
-.product-info{padding:14px}
-.product-info h3{margin:0 0 8px;font-size:1rem}
-.price{font-weight:900;font-size:1.1rem}
-.demo{font-size:.75rem;color:var(--muted);margin:8px 0 12px;line-height:1.4}
-.order{width:100%;background:#111;color:#fff;border:0;border-radius:5px;padding:12px;font-weight:800;cursor:pointer}
-#founder{margin:45px 0 20px;background:#e9edfa;border-radius:12px;padding:26px}
-.founder-name{font-size:1.6rem;font-weight:900}
-footer{background:#101114;color:white;padding:28px 18px;text-align:center}
-footer p{color:#c5c5c5;font-size:.85rem}
-.modal-backdrop{position:fixed;inset:0;background:#0009;z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
-.modal{background:#fff;border-radius:12px;padding:24px;width:min(100%,360px);text-align:center}
-.modal h3{margin-top:0}
-.modal .btn{width:100%;margin:7px 0}
-.secondary{background:#eceef4;color:#111}
-.close{background:none;border:0;padding:10px;cursor:pointer}
-@media(max-width:700px){
-.hero{grid-template-columns:1fr;padding-top:35px}
-.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.product-art{height:165px}
-.section-title{align-items:start;flex-direction:column}
-nav{gap:10px}
-nav a{font-size:.8rem}
-}
-@media(max-width:430px){
-.grid{grid-template-columns:1fr 1fr}
-.product-art{height:135px}
-.product-art span{font-size:1.35rem}
-.product-info{padding:11px}
-.product-info h3{font-size:.9rem}
-}
-</style>
-</head>
-<body>
-<section id="welcome">
- <div class="welcome-inner">
-  <p class="tagline">Wear Your Vibe.</p>
-  <h1 class="brand">GENZ FITS</h1>
-  <div class="founder-highlight">Founded by Basharat Ashraf</div><br>
-  <span class="boys">ONLY FOR BOYS · NOT FOR GIRLS</span>
-  <button class="btn" onclick="enterSite()">ENTER WEBSITE&nbsp; →</button>
- </div>
-</section>
-<div id="site" class="hidden">
-<header><a class="logo" href="#" onclick="window.scrollTo(0,0);return false" style="color:inherit;text-decoration:none">GENZ <span>FITS</span></a><nav><a href="#shop">Shop</a><a href="#founder">Founder</a><a href="#contact">Contact</a></nav></header>
-<main>
- <section class="hero">
-  <div><div class="eyebrow">Streetwear · Boys only</div><h1>Wear your<br><span style="color:var(--blue)">own vibe.</span></h1><p>Everyday streetwear with a clean, confident look. Find your next fit at GENZ FITS.</p><span class="notice">ONLY FOR BOYS · NOT FOR GIRLS</span></div>
-  <div class="hero-art"><strong>YOUR<br>FIT.<br>YOUR<br>RULES.</strong></div>
- </section> <section id="shop">
-  <div class="section-title"><h2>Shop the collection</h2><span class="eyebrow">GENZ FITS</span></div>
-  <p class="demo">Preview collection only. Product artwork and prices below are examples—replace them with your actual stock and prices before taking orders.</p>
-  <div class="grid" id="products"></div>
- </section>
- <section id="founder"><div class="eyebrow">Meet the Founder</div><div class="founder-name">Basharat Ashraf</div></section>
-</main>
-<footer id="contact"><div class="logo">GENZ <span style="color:#7896ff">FITS</span></div><p>Wear Your Vibe. · ONLY FOR BOYS · NOT FOR GIRLS</p><p>Orders and questions via WhatsApp</p></footer>
-</div>
-<div id="waModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
- <div class="modal"><h3 id="modalTitle">Choose WhatsApp</h3><p id="modalProduct">How would you like to continue?</p>
-  <a id="normalWa" class="btn" href="#" target="_blank" rel="noopener">WhatsApp</a>
-  <a id="businessWa" class="btn secondary" href="#" target="_blank" rel="noopener">WhatsApp Business</a>
-  <button class="close" onclick="closeModal()">Cancel</button>
-  <p class="demo">Your phone may open its default WhatsApp app. If the wrong app opens, set your preferred app in Android settings.</p>
- </div>
-</div>
-<script>
-const phone = "919103482274";
-const products = [
- {name:"Essential Hoodie",price:"₹999",art:"ESSENTIAL<br>HOODIE"},
- {name:"Oversized Sweatshirt",price:"₹799",art:"OVERSIZED<br>SWEATSHIRT"},
- {name:"Baggy Cargo Pants",price:"₹899",art:"BAGGY<br>CARGO"},
- {name:"Puffer Jacket",price:"₹1,799",art:"PUFFER<br>JACKET"},
- {name:"Zip-up Jacket",price:"₹1,199",art:"ZIP-UP<br>JACKET"},
- {name:"Relaxed Fit Trousers",price:"₹699",art:"RELAXED<br>TROUSERS"}
-];
-const grid = document.getElementById("products");
-products.forEach(p=>{
- const card=document.createElement("article");card.className="product";
- card.innerHTML=`<div class="product-art"><span>${p.art}</span></div><div class="product-info"><h3>${p.name}</h3><div class="price">${p.price}</div><p class="demo">Sample listing · confirm price and availability</p><button class="order">Order on WhatsApp</button></div>`;
- card.querySelector("button").addEventListener("click",()=>openModal(p));
- grid.appendChild(card);
-});function enterSite(){document.getElementById("welcome").classList.add("hidden");document.getElementById("site").classList.remove("hidden");window.scrollTo(0,0)}
-function openModal(p){
- const message=encodeURIComponent(`Hi GENZ FITS! I want to order: ${p.name} — ${p.price}. Please confirm sizes, availability and delivery charges.`);
- const url=`https://wa.me/${phone}?text=${message}`;
- document.getElementById("modalProduct").textContent=`${p.name} · ${p.price}`;
- document.getElementById("normalWa").href=url;
- document.getElementById("businessWa").href=`whatsapp-business://send?phone=${phone}&text=${message}`;
- document.getElementById("waModal").classList.remove("hidden");
-}
-function closeModal(){document.getElementById("waModal").classList.add("hidden")}
-document.getElementById("waModal").addEventListener("click",e=>{if(e.target.id==="waModal")closeModal()});
-</script>
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENZ FITS | Premium Streetwear - Wear Your Vibe.</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================
+       CSS VARIABLES & BASE STYLES
+       ========================================== */
+    :root {
+      --bg-black: #101114;
+      --bg-card: #181A1F;
+      --text-white: #F7F7F5;
+      --electric-blue: #2457D6;
+      --electric-blue-hover: #1b44ab;
+      --bright-red: #E44747;
+      --light-blue: #DCE5FF;
+      --soft-grey: #E8E8E8;
+      --text-muted: #A0A5B1;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 70px;
+    }
+
+    body.no-scroll {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      outline: none;
+    }
+
+    /* ==========================================
+       1. AUTOMATIC WELCOME POPUP WITH COUNTDOWN
+       ========================================== */
+    #welcome-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(16, 17, 20, 0.98);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      z-index: 99999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+      visibility: visible;
+      padding: 20px;
+    }
+
+    #welcome-popup.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .popup-content {
+      background: linear-gradient(145deg, #181a1f, #121317);
+      border: 1px solid var(--electric-blue);
+      box-shadow: 0 0 35px rgba(36, 87, 214, 0.35);
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      animation: popupScale 0.6s ease-out forwards;
+      position: relative;
+    }
+
+    @keyframes popupScale {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .popup-subheading {
+      font-size: 0.9rem;
+      letter-spacing: 3px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .popup-logo {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .popup-logo span {
+      color: var(--electric-blue);
+    }
+
+    .popup-tagline {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--light-blue);
+      margin-bottom: 15px;
+      letter-spacing: 1.5px;
+    }
+
+    .popup-founder-badge {
+      display: inline-block;
+      background-color: var(--electric-blue);
+      color: var(--text-white);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(36, 87, 214, 0.4);
+    }
+
+    .popup-boys-badge {
+      display: inline-block;
+      background-color: rgba(228, 71, 71, 0.15);
+      border: 1.5px solid var(--bright-red);
+      color: var(--bright-red);
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+    }
+
+    .countdown-container {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .countdown-number {
+      font-family: var(--font-heading);
+      font-size: 1.3
